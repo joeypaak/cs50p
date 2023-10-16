@@ -27,8 +27,6 @@ def check(argv):
         sys.exit("Too few command-line arguments")
     elif len(argv) > 2:
         sys.exit("Too many command-line arguments")
-    else:
-        pass
 
     try:
         f = open(argv[1], "r")

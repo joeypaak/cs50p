@@ -14,8 +14,6 @@ def is_valid(s):
     for c in s:
         if c in string.punctuation:
             return False
-        else:
-            pass
 
     s_length = len(s)
     # vanity plates may contain a maximum of 6 characters (letters or numbers) and a minimum of 2 characters
@@ -66,8 +64,6 @@ def contains_numbers(s):
     for char in s:
         if char.isdigit():
             return True
-        else:
-            pass
 
 
 if __name__ == "__main__":

@@ -10,10 +10,9 @@ def get_fraction():
     except (ValueError, ZeroDivisionError):
       pass
     else:
-      if decimal > 1 or decimal < 0:
-        pass
-      else:
+      if 0 <= decimal <= 1:
         break
+
   percentage = int(round(decimal, 2) * 100)
   if percentage <= 1:
     return "E"

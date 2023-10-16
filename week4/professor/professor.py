@@ -7,8 +7,6 @@ def main():
     for _ in range(10):
         if round(level):
             score += 1
-        else:
-            pass
     print(f"Score: {score}")
 
 
@@ -18,8 +16,6 @@ def get_level():
         if level == "1" or level == "2" or level == "3":
             level = int(level)
             return level
-        else:
-            pass
 
 
 def generate_integer(level):

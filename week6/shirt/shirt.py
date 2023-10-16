@@ -17,8 +17,6 @@ def check(argv):
         sys.exit("Too few command-line arguments")
     elif len(argv) > 3:
         sys.exit("Too few command-line arguments")
-    else:
-        pass
 
     input_format = os.path.splitext(argv[1])[1]
     output_format = os.path.splitext(argv[2])[1]

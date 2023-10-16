@@ -31,8 +31,6 @@ def get_date(prompt):
             else:
                 if 1 <= month <= 12 and 1 <= day <= 31:
                     return month, day, year
-                else:
-                    pass
         # second case
         elif len(date.split()) == 3:
             month, day, year = date.split()
@@ -47,11 +45,6 @@ def get_date(prompt):
                     return month, int(day.replace(",", "")), int(year)
                 except ValueError:
                     pass
-            else:
-                pass
-        # third case, just ELSE
-        else:
-            pass
 
 
 main()
