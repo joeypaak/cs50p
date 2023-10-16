@@ -7,11 +7,10 @@ def main():
     check(sys.argv)
 
     shirt = Image.open("shirt.png")
-    input_image = ImageOps.fit(
-        Image.open(sys.argv[1]), shirt.size
-        )
+    input_image = ImageOps.fit(Image.open(sys.argv[1]), shirt.size)
     input_image.paste(shirt, shirt)
     input_image.save(sys.argv[2])
+
 
 def check(argv):
     if len(argv) < 3:
